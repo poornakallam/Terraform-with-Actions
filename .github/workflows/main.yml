@@ -23,5 +23,5 @@ jobs:
 
       - name: lambda zip
         run: |
-          zip -r modules.zip modules/
+          zip -r modules.zip ./modules
           ls -al
