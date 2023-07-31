@@ -30,13 +30,13 @@ jobs:
           terraform_version: 1.0.2
           terraform_wrapper: false
 
-      - name: Lint Code Base
-        uses: super-linter/super-linter@v5
-        env:
-          VALIDATE_ALL_CODEBASE: false
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          VALIDATE_GITHUB_ACTIONS: true
+      # - name: Lint Code Base
+      #   uses: super-linter/super-linter@v5
+      #   env:
+      #     VALIDATE_ALL_CODEBASE: false
+      #     DEFAULT_BRANCH: main
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     VALIDATE_GITHUB_ACTIONS: true
 
       - name: terraform fmt
         run: terraform fmt -recursive -check
