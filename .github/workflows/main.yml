@@ -59,7 +59,7 @@ jobs:
       - name: Terraform plan
         run: |
           ls -al
-          terraform paln
+          terraform plan
       - name: terraform apply
         run: |
           la -al
