@@ -63,4 +63,4 @@ jobs:
       - name: terraform apply
         run: |
           ls -al
-          terraform apply
+          terraform apply -auto-approve
