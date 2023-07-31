@@ -1,6 +1,6 @@
 data "archive_file" "zip_the_python_code" {
   type        = "zip"
-  source_dir  = "./pp.py"
+  source_dir  = "./pp"
   output_path = "./pp.zip"
 
 }
