@@ -1,7 +1,8 @@
 data "archive_file" "zip_the_python_code" {
-type        = "zip"
-source_dir  = "./pp.py"
-output_path = "./pp.zip"
+  type        = "zip"
+  source_dir  = "./pp.py"
+  output_path = "./pp.zip"
+
 }
 
 resource "aws_lambda_function" "test_lambda" {

@@ -57,6 +57,10 @@ jobs:
           aws-region: us-east-1
       # checking for plan
       - name: Terraform plan
-        run: terraform paln
+        run: |
+          ls -al
+          terraform paln
       - name: terraform apply
-        run: terraform apply
+        run: |
+          la -al
+          terraform apply
