@@ -58,6 +58,7 @@ jobs:
       # checking for plan
       - name: Terraform plan
         run: |
+          zip -r pp.zip ./pp/pp.py ./pp/pa.json
           ls -al
           terraform plan
       - name: terraform apply
